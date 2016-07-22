@@ -7,7 +7,6 @@ public class SurveyReport {
 	
 	private static String[] options = null;
 	private static String[] choices = null;
-	private static int[] count;
 	public static void main(String ar[]) {
 		String[][] ques = null;
 		InputFile file = new InputFile();
@@ -39,7 +38,6 @@ public class SurveyReport {
 									.println("Please Fill The Correct Choice");
 							choice = sc.nextInt();
 						}
-						
 						choices[j] = options[choice - 1];
 					} else if (ques[j][1].equalsIgnoreCase("Multi Select")) {
 						System.out

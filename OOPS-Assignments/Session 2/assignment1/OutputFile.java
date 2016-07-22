@@ -15,7 +15,7 @@ public class OutputFile {
 		try {
 			BufferedWriter out = new BufferedWriter(
 					new FileWriter(
-							"E:\\ajinkya workspace\\OOPS Session2\\src\\assignment1\\Answer.txt"));
+							"C:\\metacube workspace\\Answer.txt"));
 
 			for (int i = 0; i < participants_ans.length; i++) {
 				out.write("Participant" + (i + 1));
@@ -26,6 +26,7 @@ public class OutputFile {
 				out.newLine();
 			}
 			out.close();
+			new CalculateRatio().printRatio(participants_ans);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

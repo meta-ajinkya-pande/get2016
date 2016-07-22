@@ -10,14 +10,14 @@ public class InputFile {
 		String[][] ques = null;
 		int counter =0;
 		try{
-			in = new BufferedReader(new FileReader("E:\\ajinkya workspace\\OOPS Session2\\src\\assignment1\\Question.txt"));
+			in = new BufferedReader(new FileReader("C:\\metacube workspace\\Question.txt"));
 			String c;
 			int i=0;
 	        while (in.readLine() != null) {
 	        	counter++;
 	        }
 	        in.close();
-	        in = new BufferedReader(new FileReader("E:\\ajinkya workspace\\OOPS Session2\\src\\assignment1\\Question.txt"));
+	        in = new BufferedReader(new FileReader("C:\\metacube workspace\\Question.txt"));
 	        ques = new String[counter][];
 	        while((c= in.readLine())!=null){
 	        	ques[i++] = c.split(",");
@@ -28,5 +28,4 @@ public class InputFile {
 		}
 		return ques;
 	}
-	
 }

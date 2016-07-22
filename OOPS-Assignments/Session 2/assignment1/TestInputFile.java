@@ -18,7 +18,7 @@ public class TestInputFile {
 		String[][] expected = {
 				{ "Rating", "Single Select", "1/2/3/4/5" },
 				{ "Area of improvement", "Multi Select",
-						"Service Quality/Communication/Delivery Process" } };
+						"Service Quality/Communication/Delivery Process" },{"Feedback","text"} };
 		InputFile file = new InputFile();
 		try {
 			assertArrayEquals(expected, file.getQueStrings());
