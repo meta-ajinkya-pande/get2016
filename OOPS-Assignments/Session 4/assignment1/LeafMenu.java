@@ -8,6 +8,7 @@ public class LeafMenu extends Menu {
 	private String parent;
 	private String menuname;
 	
+	// This is leaf menu so is do not have list so it simply perform an action
 	@Override
 	public void actionPerformed(Scanner sc){
 		System.out.println(parent + "->" + menuname);

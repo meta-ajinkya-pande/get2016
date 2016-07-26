@@ -15,10 +15,12 @@ public class CompositeMenu extends Menu {
 	private String parent;
 	private List<Menu> menulist = new ArrayList<Menu>();
 	private String menuname;
-
+	
+	/*
+	 * This function used to display the menu list and ask for the choice 
+	 */
 	@Override
 	public void actionPerformed(Scanner sc) {
-		// TODO Auto-generated method stub
 		System.out.println(parent);
 		System.out.println("");
 		int i = 1;
@@ -33,6 +35,10 @@ public class CompositeMenu extends Menu {
 		menulist.get(choice-1).actionPerformed(sc);
 	}
 
+	/**
+	 * This function used to generate the menulist and sub menu list.
+	 * @param sc is scanner type object for getting input
+	 */
 	public void generateList(Scanner sc) {
 		int no_items = 0;
 		try {

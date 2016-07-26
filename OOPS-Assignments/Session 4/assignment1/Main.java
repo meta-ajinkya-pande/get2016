@@ -9,9 +9,10 @@ public class Main {
 		CompositeMenu menu = new CompositeMenu();
 		Scanner sc = new Scanner(System.in);
 		menu.setMenuName("Main");
-		menu.setParent("");
-		menu.generateList(sc);
-		menu.actionPerformed(sc);
+		menu.setParent(""); // Setting there is no parent for main menu
+		menu.generateList(sc); // generating list for main menu
+		menu.actionPerformed(sc); // perform print and action accordingly
+		sc.close();
 	}
 
 }
