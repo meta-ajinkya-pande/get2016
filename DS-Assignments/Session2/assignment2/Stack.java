@@ -68,7 +68,8 @@ public class Stack {
 		}
 		return output;
 	}
-
+ 
+	// to check the precedence of the operator
 	private int precedence(char data) {
 		if (data == '^'){
 			return 3;
@@ -82,6 +83,7 @@ public class Stack {
 		}
 	}
 
+	// to check where the given data is operator or the operand
 	public boolean isOperator(char data) {
 		if (data == '*' || data == '/' || data == '+' || data == '-'
 				|| data == '^' || data == '(' || data ==')') {

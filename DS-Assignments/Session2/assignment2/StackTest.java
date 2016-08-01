@@ -12,17 +12,20 @@ public class StackTest {
 		stack = new Stack();
 	}
 
+	// test the method convert infix to postfix 
 	@Test
 	public void testInfixtoPostfix() {
 		assertEquals("ABC-+", stack.convertInfixToPostfix("A+(B-C)"));
 	}
 	
+	// Check the method of push and pop of stack
 	@Test
 	public void testPop(){
 		stack.push('A');
 		assertEquals('A' , stack.pop());
 	}
 	
+	// Check the method peek of stack
 	@Test
 	public void testPeek(){
 		stack.push('A');
