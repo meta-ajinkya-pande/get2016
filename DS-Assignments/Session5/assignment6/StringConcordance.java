@@ -50,14 +50,7 @@ public class StringConcordance {
 	 * It prints the character and its positions
 	 */
 	public void printIndex() {
-		Set<Character> keys = concordanceTabel.keySet();
-		for (Character character : keys) {
-			List<Integer> Values = concordanceTabel.get(character);
-			System.out.print(character + "=[ ");
-			for (Integer integer : Values) {
-				System.out.print(integer + " ");
-			}
-			System.out.println("]");
-		}
+		System.out.println(concordanceTabel);
 	}
+	
 }

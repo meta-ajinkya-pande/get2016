@@ -1,6 +1,7 @@
 package assignment6;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkListRecursion<E> {
 	
@@ -44,5 +45,12 @@ public class LinkListRecursion<E> {
 		for (E e : link) {
 			System.out.println(e);
 		}
+	}
+	
+	/**
+	 * return the whole list
+	 */
+	public List<E> getList(){
+		return link;
 	}
 }
