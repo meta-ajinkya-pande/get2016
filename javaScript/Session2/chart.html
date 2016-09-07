@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Chart</title>
+</head>
+<script>
+    function chart(number1,number2,number3,number4) {
+		var max = number1;
+		if(max < number2){
+			max = number2;
+		}
+		if(max < number3){
+			max = number3;
+		}
+		if(max < number4){
+			max = number4;
+		}
+		var temp = max;
+		for(var i=0;i<max;i++){
+			for(var j=0;j<4;j++){
+				if(j===0){
+					if(number1 >= temp){
+						document.write("* &nbsp;&emsp;");
+					}else{
+						document.write("&emsp;&emsp;");
+					}
+				}
+				if(j===1){
+					if(number2 >= temp){
+						document.write("* &nbsp;&emsp;");
+					}else{
+						document.write("&emsp;&emsp;");
+					}
+				}
+				if(j===2){
+					if(number3 >= temp){
+						document.write("* &nbsp;&emsp;");
+					}else{
+						document.write("&emsp;&emsp;");
+					}
+				}
+				if(j===3){
+					if(number4 >= temp){
+						document.write("* &nbsp;&emsp;");
+						continue;
+					}else{
+						document.write("&emsp;&emsp;");
+					}
+				}
+			}
+			document.write("<br/>");
+			temp--;
+		}
+		document.write("A&emsp; B&emsp; C&emsp; D");
+    }
+</script>
+<body>
+    Enter 1st Number <input type="text" id="no1" value="" /><br/>
+    Enter 2nd Number <input type="text" id="no2" value="" /><br/>
+    Enter 3rd Number <input type="text" id="no3" value="" /><br/>
+	Enter 4rd Number <input type="text" id="no4" value="" /><br/>
+    <input type="button" onclick="chart( parseInt(document.getElementById('no1').value), 
+											parseInt(document.getElementById('no2').value), 
+											parseInt(document.getElementById('no3').value),
+											parseInt(document.getElementById('no4').value));" value="Submit" /><br/>
+</body>
+</html>

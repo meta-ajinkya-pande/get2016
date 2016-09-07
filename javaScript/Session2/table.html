@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Table of Number</title>
+</head>
+<script>
+    function pyramid(number1) {
+		while(isNaN(number1)){
+			number1 = prompt("Input correct Number");
+		}
+		var multiply;
+		for(var i=1;i<=10;i++){
+			multiply = number1*i;
+			document.write(number1 + " * " + i + " = " + multiply+"<br/>");
+		}
+    }
+</script>
+<body>
+    Enter Number <input type="text" id="no1" value="" /><br/>
+    <input type="button" onclick="pyramid( parseInt(document.getElementById('no1').value));" value="Submit" /><br/>
+</body>
+</html>

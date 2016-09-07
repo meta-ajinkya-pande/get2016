@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Pyramid Numbers</title>
+</head>
+<script>
+    function pyramid(number1) {
+		while(isNaN(number1)){
+			number1 = prompt("Input correct Number");
+		}
+		document.write("<center>");
+        for(var i=0;i<number1;i++){
+			for(var j=0;j<=i;j++){
+				document.write(" * ");
+			}
+			document.write("<br/>");
+		}
+		document.write("</center>");
+    }
+</script>
+<body>
+    Enter Number <input type="text" id="no1" value="" /><br/>
+    <input type="button" onclick="pyramid( parseInt(document.getElementById('no1').value));" value="Submit" /><br/>
+</body>
+</html>
