@@ -1,0 +1,23 @@
+.section1,.section2{
+	width:80%;
+}
+
+.section1{
+	border:1px outset #2132b2;
+	height:40vh;
+	padding:30px;
+	margin-bottom:5px;
+}
+
+.section2{
+	border:1px outset #2132bb;
+	height:40vh;
+	padding:30px;
+}
+
+.field11,.field12,.field21,.field22{
+	margin:10px;
+	text-align:center;
+	border:1px outset #5312a4;
+	height:30%;
+}
