@@ -1,0 +1,19 @@
+.clear{
+    clear:both;
+}
+
+.box{
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin: 20px;
+    background: rgba(49, 78, 188, 1);
+}
+
+.error{
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin: 20px;
+    background:rgba(73, 188, 13, 1);
+}
