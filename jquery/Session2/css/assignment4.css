@@ -1,0 +1,20 @@
+#main{
+	display:flex;
+	height:40%;
+	align-items:center;
+	justify-content:center;
+}
+
+#table{
+	display:table;
+}
+
+.table-row{
+	display:table-row-group;
+}
+
+.table-cell1,.table-cell2,.table-cell{
+	display:table-cell;
+	padding:20px;
+	vertical-align:middle;
+}
