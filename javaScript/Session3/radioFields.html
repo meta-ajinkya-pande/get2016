@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Alert Box Demo</title>
+</head>
+<script>
+    function combi(){
+		var grp1 = document.getElementsByName("group1");
+		var grp2 = document.getElementsByName("group2");
+		for(var i=0;i<grp1.length;i++){
+			if(grp1[i].checked){
+				break;
+			}
+		}
+		for(var j=0;j<grp2.length;j++){
+			if(grp2[j].checked){
+				document.write(grp1[i].value+" "+ grp2[j].value);
+				break;
+			}
+		}
+	}
+</script>
+<body>
+    Choose :<input type ="radio" value="radio1" name="group1"/>Radio 1 &emsp;<input type="radio" value="radio2" name="group1"/> Radio 2 <br/><br/>
+	Choose :<input type ="radio" value="radio3" name="group2"/>Radio 3 &emsp;<input type="radio" value="radio4" name="group2"/> Radio 4 <br/><br/>
+	<input type="button" onclick="combi();" value="Submit" /><br/>
+</body>
+</html>
