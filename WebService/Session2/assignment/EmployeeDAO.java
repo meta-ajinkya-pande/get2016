@@ -161,7 +161,7 @@ public class EmployeeDAO {
 	 * @param employee - The employee object
 	 * @return - true if the record is created else false
 	 */
-	public int insertEmployee(Employee employee) {
+	public boolean insertEmployee(Employee employee) {
 		//Getting the connection object
 		Connection connection = ConnectionFactory.getConnection();
 		try {
@@ -180,16 +180,14 @@ public class EmployeeDAO {
 			
 			//Fetching the auto generated key to be used by tables also
 			ResultSet rs = statement.getGeneratedKeys();
-			int lastInsertedID = 0;
-            if(rs.next()) {
-                lastInsertedID = rs.getInt(1);
+			if(rs.next()) {
             }
 			statement.close();
 			
-			return lastInsertedID;
+			return true;
 		} catch (SQLException e) {
 			e.printStackTrace();
-			return 0;
+			return false;
 		}
 	}
 
