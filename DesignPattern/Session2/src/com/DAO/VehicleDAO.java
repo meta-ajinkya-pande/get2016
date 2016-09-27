@@ -3,7 +3,7 @@ package com.DAO;
 import com.VO.CarVO;
 /**
  * 
- * @author Amit
+ * @author Ajinkya
  *
  */
 public interface VehicleDAO {

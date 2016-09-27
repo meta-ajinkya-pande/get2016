@@ -2,7 +2,7 @@ package com.VO;
 
 /**
  * 
- * @author Amit
+ * @author Ajinkya
  *
  */
 public class CarVO extends VehicleVO {

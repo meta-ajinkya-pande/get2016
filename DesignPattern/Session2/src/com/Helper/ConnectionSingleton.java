@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 /**
  * 
- * @author Amit
+ * @author Ajinkya
  * Singeleton design pattern implementation 
  * Creates a single object of the connection
  *

@@ -5,7 +5,7 @@ import java.util.List;
 import com.VO.CarVO;
 /**
  * 
- * @author Amit
+ * @author Ajinkya
  *
  */
 public interface CarDAO extends VehicleDAO {

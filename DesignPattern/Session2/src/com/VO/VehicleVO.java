@@ -2,7 +2,7 @@ package com.VO;
 
 /**
  * 
- * @author Amit
+ * @author Ajinkya
  * abstract class containing vehicle details
  *
  */

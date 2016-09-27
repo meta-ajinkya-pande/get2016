@@ -13,7 +13,7 @@ import com.VO.CarVO;
 
 /**
  * 
- * @author Amit This class interacts with the database using singelton
+ * @author Ajinkya This class interacts with the database using singelton
  *         connection object
  * 
  */
