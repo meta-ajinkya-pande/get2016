@@ -37,7 +37,7 @@ public class SearchCarServlet extends HttpServlet {
         //parse the search parameter
         String filter = request.getParameter("search-parameter");
         List < CarVO > carList = new ArrayList < CarVO > ();
-        CarDAOConcrete carDAOConcrete = new CarDAOConcrete();
+        CarDAO carDAO = new CarDAOConcrete();
         switch (filter) {
             //if the search is to be performed on the basis of make or model
             //then parse the value of make or model
